@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CandidatesComponent implements OnInit {
    missionName = "LaunchCode Moonshot"
-
+    
    candidates = [
     {name: 'Rusty Rutabaga', data: {age: 5, mass: '0.75 kg', sidekick: 'Blake'}, image: 'assets/images/Blake.png'},
     {name: 'Tessa Tortoise', data: {age: 126, mass: '113 kg', sidekick: 'Sally'}, image: 'assets/images/Sally.png'},
@@ -21,6 +21,11 @@ export class CandidatesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addToCrew(person: object){
+    if(this.crew.includes(this.selected))
+        this.crew.push(person)
   }
 
   // Code the addToCrew function here:

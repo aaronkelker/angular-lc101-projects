@@ -1,0 +1,13 @@
+.chores {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-size: large;
+}
+
+.chores h3 {
+    text-decoration: underline;
+}
+
+.chores li {
+    font-style: italic
+}
